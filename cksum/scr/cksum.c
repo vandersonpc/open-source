@@ -16,7 +16,7 @@
 #define BUFLEN (1 << 16)       //  Number of bytes to read at once.
 
 char *program_name = "cksum";  // Software name
-char *version = "1.00";        // Software version
+char *version = "1.01";        // Software version
 
 /* Posix.2 Unix CRC IEEE 1003.2 - 1992 table */
 
@@ -124,7 +124,6 @@ void calc_file_cksum(char *fname)
 	 }
 
 	}
-  
   fclose(fp); // Close file
 
   bytes_read = length;
@@ -146,36 +145,34 @@ void calc_file_cksum(char *fname)
   printf(" Size  : %ld\n", length);
   printf(" Chksum: %lu\n", crc);
   printf("------------------------------------------------------\n");
-
 }
 
 /*
  * Show use message
  */
  
- void show_use()
- {
-	printf("------------------------------------------------------\n");
-    printf(" %s - POSIX.2 Checksum for Windows - version %s\n", program_name, version);
-	printf("\n");
-	printf(" 2018 - By Vanderson Pimenta  <vandersonpc@gmail.com>\n"); 
-    printf("------------------------------------------------------\n");
-    printf(" Use: %s <filename> \n", program_name);
-	printf("------------------------------------------------------\n"); 
- }
+void show_use()
+{
+  printf("------------------------------------------------------\n");
+  printf(" %s - POSIX.2 Checksum for Windows - version %s\n", program_name, version);
+  printf("\n");
+  printf(" 2018 - By Vanderson Pimenta  <vandersonpc@gmail.com>\n"); 
+  printf("------------------------------------------------------\n");
+  printf(" Use: %s <filename> \n", program_name);
+  printf("------------------------------------------------------\n"); 
+}
 
-/* Main rooutine
- *
+/* 
+ * Main rooutine
  */
  
 void main(int argc, char** argv) 
 {
   if (argc < 2)
   {   
-    show_use();
-    exit(0);
+   show_use();
+   exit(0);
   }	  
   
   calc_file_cksum(argv[1]);
-
 }
