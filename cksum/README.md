@@ -1,4 +1,4 @@
-#cksum
+# cksum
 
 ## Unix/POSIX checksum for Windows
 
