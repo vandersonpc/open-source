@@ -1,8 +1,10 @@
-# cksum
+# CKSUM
 
 ## Unix/POSIX checksum for Windows
 
-Checksum based on the IEEE Std 1003.1
+Compute the Posix.2 Unix CRC IEEE 1003.2 - 1992 checksum of a file
+
+**Tools:** Notepad+, GCC 6.3.0
 
 Use:
 `cksum <filename>`
