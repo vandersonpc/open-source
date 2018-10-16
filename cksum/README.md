@@ -11,3 +11,7 @@ Compute the Posix.2 Unix CRC IEEE 1003.2 - 1992 checksum of a file
 
 Use:
 `cksum <filename>`
+
+## References
+
+http://reveng.sourceforge.net/crc-catalogue/17plus.htm#crc.cat-bits.32
