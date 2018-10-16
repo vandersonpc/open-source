@@ -15,3 +15,5 @@ Use:
 ## References
 
 http://reveng.sourceforge.net/crc-catalogue/17plus.htm#crc.cat-bits.32
+https://www.unix.com/man-page/posix/1posix/cksum/
+http://pubs.opengroup.org/onlinepubs/009695299/utilities/cksum.html
